@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Compassionate Home Care in Sioux Falls | Eli Home Care LLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eli Home Care provides personalized in-home care services in Sioux Falls. Compassionate caregivers, skilled nursing, and daily living assistance for seniors and adults.">
+    
+    <!-- Custom Color Palette -->
+    <style>
+        :root {
+            --primary: #3A7CA5;  /* Calming blue - trust/professionalism */
+            --secondary: #81C3D7; /* Soft teal - compassion/care */
+            --accent: #F07167;    /* Coral - warmth/energy */
+            --light: #F7F9FC;     /* Light background */
+            --dark: #2F3E46;      /* Dark slate - professionalism */
+            --text: #3D3D3D;      /* Dark gray for readability */
+            --light-text: #F7F9FC;/* Light text for dark backgrounds */
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+        
+        /* Modern Header */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        /* Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(58, 124, 165, 0.9), rgba(58, 124, 165, 0.9)), 
+                        url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+            border: 2px solid var(--accent);
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            margin-left: 1rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Main Content Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--accent);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .section-title p {
+            color: var(--text);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--light);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            height: 80px;
+            width: 80px;
+            margin: 2rem auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .service-content h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        
+        .cta h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--light);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(129, 195, 215, 0.2);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light-text);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-column li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column a {
+            color: var(--light-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: var(--secondary);
+        }
+        
+        .contact-info p {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 2rem auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .modal-header h2 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .modal-body {
+            padding: 2rem;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* About Us Modal Styles */
+        .mission-section {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent);
+        }
+        
+        .mission-section h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .mission-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border-top: 4px solid var(--secondary);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .value-card p {
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        /* Services Modal Styles */
+        .service-section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .service-section:last-child {
+            border-bottom: none;
+        }
+        
+        .service-section h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-section h3 i {
+            margin-right: 15px;
+            color: var(--accent);
+        }
+        
+        .service-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .service-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .service-list li:before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav li {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .btn {
+                display: block;
+                width: 80%;
+                margin: 0 auto 1rem;
+            }
+            
+            .btn-secondary {
+                margin-left: auto;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+            
+            .modal-content {
+                margin: 1rem;
+            }
+            
+            .modal-header h2 {
+                font-size: 1.8rem;
+            }
+            
+            .service-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><img src="gallery/Eli-ts1631166682.png" alt="Eli Home Care Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#" id="about-link">About Us</a></li>
+                    <li><a href="#" id="services-link">Services</a></li>
+                    <li><a href="Employment/">Employment</a></li>
+                    <li><a href="Contact-Us/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Compassionate Home Care in Sioux Falls</h1>
+            <p>Providing personalized care that helps seniors maintain independence and dignity in the comfort of their own homes.</p>
+            <div class="hero-buttons">
+                <a href="Contact-Us/" class="btn btn-primary">Schedule a Consultation</a>
+                <a href="tel:6053239002" class="btn btn-secondary">Call Now: (605) 323-9002</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose Eli Home Care?</h2>
+                    <p>At Eli Home Care LLC, we understand that every individual has unique needs. Our compassionate caregivers provide personalized care plans tailored to each client's specific requirements.</p>
+                    <p>Founded in Sioux Falls, we're proud to serve our local community with reliable, professional home care services. Our team undergoes rigorous training and background checks to ensure your loved ones receive the highest quality care.</p>
+                    <a href="#" id="about-link-2" class="btn btn-primary" style="background-color: var(--primary); border-color: var(--primary);">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="social-worker-taking-care-old-woman.jpg" alt="Social worker taking care of an old woman" width="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Home Care Services</h2>
+                <p>We offer comprehensive care solutions designed to meet the diverse needs of our clients</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="personal-assistance">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Personal Assistance</h3>
+                        <p>Support with daily activities to maintain independence and dignity in the comfort of home.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="companion-care">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Companion Care</h3>
+                        <p>Social interaction, conversation, and companionship to reduce loneliness and improve quality of life.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="homemaking-care">
+                    <div class="service-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Homemaking Care</h3>
+                        <p>Household services to keep your home clean, safe, and comfortable.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="hospital-accompaniment">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Hospital Accompaniment</h3>
+                        <p>Support during hospital stays to reduce stress and ensure comfort.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="personal-care">
+                    <div class="service-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Personal Care</h3>
+                        <p>Assistance with dressing, hygiene and incontinence services for peaceful living.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-service="non-medical-transportation">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Non-Medical Transportation</h3>
+                        <p>Safe transportation to appointments, social activities, and errands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Discuss Your Care Needs?</h2>
+            <p>Contact us today for a free, no-obligation consultation. We'll work with you to develop a personalized care plan that meets your specific requirements.</p>
+            <a href="Contact-Us/" class="btn btn-primary">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Families Say</h2>
+                <p>Hear from families who have experienced our compassionate care firsthand</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>The caregivers from Eli Home Care have been a blessing for my mother. They treat her with such respect and kindness, and I finally have peace of mind knowing she's in good hands.</p>
+                    </div>
+                    <div class="testimonial-author">- Sarah J., Sioux Falls</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>After my husband's stroke, we needed skilled nursing care at home. Eli Home Care provided excellent professionals who helped with his recovery while making him feel comfortable and cared for.</p>
+                    </div>
+                    <div class="testimonial-author">- Robert T., Harrisburg</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>What sets Eli Home Care apart is their attention to detail. They truly listen to our needs and adjust the care plan as my father's condition changes. We couldn't be happier with their services.</p>
+                    </div>
+                    <div class="testimonial-author">- Michelle L., Brandon</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Eli Home Care</h3>
+                    <p>Providing compassionate, professional home care services to Sioux Falls and surrounding communities since 2010.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" style="margin-right: 1rem;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="margin-right: 1rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="margin-right: 1rem;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#" data-service="personal-assistance">Personal Assistance</a></li>
+                        <li><a href="#" data-service="companion-care">Companion Care</a></li>
+                        <li><a href="#" data-service="homemaking-care">Homemaking Care</a></li>
+                        <li><a href="#" data-service="hospital-accompaniment">Hospital Accompaniment</a></li>
+                        <li><a href="#" data-service="personal-care">Personal Care</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 1200 E 3rd Street Ste 111<br>Sioux Falls, SD 57103</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:6053239002">(605) 323-9002</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@elihomecare.com">info@elihomecare.com</a></p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 8am - 5pm</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Eli Home Care LLC. All Rights Reserved. | <a href="privacy-policy/" style="color: var(--secondary);">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- About Us Modal -->
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>About Eli Home Care</h2>
+                <button class="modal-close" id="about-modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="mission-section">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to improve our client's lives and health by providing professional services, enabling them to achieve the full potential of every day.</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3>Our Caregivers</h3>
+                        <p>We ensure our caregivers are highly skilled and compassionate while giving attention to our clients. With them, you can be sure your loved ones are always safe and have the highest level of care. Since we maintain such a high level of care, we offer regular training for our employees so they can stay in touch with the latest trends in this field of work.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <h3>Our Goal</h3>
+                        <p>The main goal of Eli Home Care LLC is to bring smiles to the faces of our patients and their families. Our home healthcare services target a wide range of people – from children, to young adults, and to the elderly. We want to make a significant difference in your life by being there for your family during the times you need us most.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <h3>Our Commitment</h3>
+                        <p>We offer equal opportunities for our clients and employees. We do not discriminate against any employee or a client on the basis of gender, color, race, origin, ethnicity, sexual orientation or anything else. No matter who you are or where you come from. As long as you are our client, you will get the best possible treatment. We are licensed, bonded, insured, and our business is in accordance with the local and state rules and regulations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Modal -->
+    <div id="services-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Our Services</h2>
+                <button class="modal-close" id="services-modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="service-section" id="personal-assistance">
+                    <h3><i class="fas fa-hands-helping"></i> Personal Assistance</h3>
+                    <p>As an experienced provider of personal care programs, we provide support to individuals in the comfort of their homes. Some of the services included in personal assistance are:</p>
+                    <ul class="service-list">
+                        <li>Bathing or showering</li>
+                        <li>Dressing and grooming</li>
+                        <li>Hair, skin, and nail care</li>
+                        <li>Oral hygiene</li>
+                        <li>Shaving</li>
+                        <li>Toileting/incontinence care</li>
+                        <li>Walking and exercise assistance</li>
+                        <li>Medication reminders</li>
+                        <li>Feeding</li>
+                    </ul>
+                </div>
+                
+                <div class="service-section" id="companion-care">
+                    <h3><i class="fas fa-home"></i> Companion Care</h3>
+                    <p>Companion care is a special service that we offer. It includes the following activities:</p>
+                    <ul class="service-list">
+                        <li>Accompaniment on errands or to doctor appointments</li>
+                        <li>Assistance with grocery shopping</li>
+                        <li>Walking to get fresh air and exercise</li>
+                        <li>Writing letters</li>
+                        <li>Playing games</li>
+                        <li>Reading aloud</li>
+                        <li>Friendly conversation etc.</li>
+                    </ul>
+                </div>
+                
+                <div class="service-section" id="homemaking-care">
+                    <h3><i class="fas fa-user-nurse"></i> Homemaking Care</h3>
+                    <p>We offer household services in order to keep your home a clean and safe place. Our services are available 24 hours a day, seven days a week. Homemaking services are a great option for when you first begin using assistance in the comfort of your home. It includes:</p>
+                    <ul class="service-list">
+                        <li>Meal planning and preparation</li>
+                        <li>Light housekeeping</li>
+                        <li>Vacuuming and dusting</li>
+                        <li>Sweeping and mopping</li>
+                        <li>Changing bed sheets</li>
+                        <li>Laundry</li>
+                        <li>Dishwashing</li>
+                        <li>Cleaning bathroom and kitchen</li>
+                        <li>Emptying trash</li>
+                        <li>Assistance sorting and reading the mail etc.</li>
+                    </ul>
+                </div>
+                
+                <div class="service-section" id="hospital-accompaniment">
+                    <h3><i class="fas fa-heart"></i> Hospital Accompaniment</h3>
+                    <p>Being away from home and family is particularly stressful for patients, but it can also be difficult for their family members who are not beside their bed. Our careGiver can plan and arrange a hospital visit, help you with packing, with arranging transportation and make sure your house is safe during your absence. Our home health caregiver can be perfect companions while your loved ones are staying in the hospital. Once you are settled in, your personal caregiver can stay by your side as much as you need - even 24 hours a day.</p>
+                </div>
+                
+                <div class="service-section" id="personal-care">
+                    <h3><i class="fas fa-car-side"></i> Personal Care</h3>
+                    <p>Personal Care is one of the main services in Home Health Care industry. It includes assistance with every day activities to help the ones in need and make the elderly life peaceful. Personal care services are related to assistance with dressing, hygiene and incontinence services.</p>
+                </div>
+                
+                <div class="service-section" id="non-medical-transportation">
+                    <h3><i class="fas fa-procedures"></i> Non Medical Transportation</h3>
+                    <ul class="service-list">
+                        <li>Transportation to and from appointments as well as to social activities, family events, stores and more</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // About Us Modal functionality
+        const aboutLinks = document.querySelectorAll('#about-link, #about-link-2, #about-link-footer');
+        const aboutModal = document.getElementById('about-modal');
+        const aboutCloseBtn = document.getElementById('about-modal-close');
+        
+        // Open about modal when any About Us link is clicked
+        aboutLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                aboutModal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+        
+        // Close about modal when X button is clicked
+        aboutCloseBtn.addEventListener('click', function() {
+            aboutModal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+        
+        // Services Modal functionality
+        const servicesLinks = document.querySelectorAll('#services-link, #services-link-footer');
+        const serviceCards = document.querySelectorAll('.service-card');
+        const serviceLinks = document.querySelectorAll('[data-service]');
+        const servicesModal = document.getElementById('services-modal');
+        const servicesCloseBtn = document.getElementById('services-modal-close');
+        
+        // Open services modal when Services link is clicked
+        servicesLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                servicesModal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+        
+        // Open services modal when service cards are clicked
+        serviceCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const serviceId = this.getAttribute('data-service');
+                servicesModal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+                
+                // Scroll to the specific service section
+                setTimeout(() => {
+                    const serviceSection = document.getElementById(serviceId);
+                    if (serviceSection) {
+                        serviceSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 300);
+            });
+        });
+        
+        // Open services modal when service links in footer are clicked
+        serviceLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const serviceId = this.getAttribute('data-service');
+                servicesModal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+                
+                // Scroll to the specific service section
+                setTimeout(() => {
+                    const serviceSection = document.getElementById(serviceId);
+                    if (serviceSection) {
+                        serviceSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 300);
+            });
+        });
+        
+        // Close services modal when X button is clicked
+        servicesCloseBtn.addEventListener('click', function() {
+            servicesModal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+        
+        // Close modals when clicking outside the modal content
+        window.addEventListener('click', function(e) {
+            if (e.target === aboutModal) {
+                aboutModal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+            }
+            if (e.target === servicesModal) {
+                servicesModal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+            }
+        });
+        
+        // Close modals with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                if (aboutModal.style.display === 'block') {
+                    aboutModal.style.display = 'none';
+                    document.body.style.overflow = 'auto'; // Re-enable scrolling
+                }
+                if (servicesModal.style.display === 'block') {
+                    servicesModal.style.display = 'none';
+                    document.body.style.overflow = 'auto'; // Re-enable scrolling
+                }
+            }
+        });
+    </script>
+</body>
+</html>
